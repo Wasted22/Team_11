@@ -1,0 +1,145 @@
+body{
+    margin: 0px 12vw;    
+}
+.header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.header__menu{
+    display: flex;
+    gap: 25px;
+    background-color: #000;
+    opacity: 0.7;
+    border-radius: 56px;
+    padding: 10px 21px;
+    margin-top: 15px;
+
+}
+
+.header__menu-item{
+    color: #fff;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+
+.market__header{
+    color: #000;
+    font-family: Inter;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0px;
+    margin-bottom: 24px;
+   
+}
+
+.market__header-accent{
+    color: #E20C13;
+}
+
+.card__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 100px;
+
+}
+
+.card__list-item{
+list-style-type: none;
+
+    
+}
+.card{
+    border-radius: 10px;
+    background-size: cover;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    height: calc(76vw/3); /*высота, карточки относительно размера секции маркета учитывая */
+    
+}
+
+
+.card-orig{
+    background-image: url(images/orig.png);
+}
+
+.card-duo{
+    background-image: url(images/duo.png);
+}
+
+.card-pro{
+    background-image: url(images/pro.png);
+}
+
+.card-artem{
+    background-image: url(images/u1.jpg);
+
+}
+.card__title{
+    padding: 10px;
+color: #FFF;
+font-family: Inter;
+font-size: 20px;    
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.banner{
+padding: 10px 20px;
+border-radius: 26px;
+background: #F5F5F7;
+margin-bottom: 100px;
+
+}
+.banner-accent{
+    font-weight: bold;
+}
+.banner__text{
+    color: #000;
+font-family: Inter;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.footer{
+    width: 100%;
+}
+
+.footer__text{
+    color: #707075;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+
+.text{
+    color: #c0c0c0;
+    font-family: Inter;
+    font-size: 16px;
+    margin: 0;
+}
+.team-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 15px;
+}
+
+.card__name{
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #fff;
+}
