@@ -1,88 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/CSS" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="header">
-            <nav class="header__menu">
-                <a class="header__menu-item" href="index.html">Маркет</a>
-                <a class="header__menu-item" href="about.html">О нас</a>
-            </nav>
-    </header>
-    <main class="main">
-            <h3 class="market__header">Наша команда</h3>
-            <ul class="card__list"> 
-                <li class="card__list-item">
-                    <a class="card-link">
-                        <article class="card card-artem team-card">
-                            <h2 class="card__name text">Dabizha Artem</h2>
-                            <p class="age text">23 y.o.</p>
-                            <p class="city text">Saint-Petersburg</p>
-                            <p class="position text">Frontend-developer</p>
-                        </article>
-                    </a>
-                </li>
-                <li class="card__list-item">
-                    <a class="card-link">
-                        <article class="card card-artem team-card">
-                            <h2 class="card__name text">Dabizha Artem</h2>
-                            <p class="age text">23 y.o.</p>
-                            <p class="city text">Saint-Petersburg</p>
-                            <p class="position text">Frontend-developer</p>
-                        </article>
-                    </a>
-                </li>
-                <li class="card__list-item">
-                    <a class="card-link">
-                        <article class="card card-artem team-card">
-                            <h2 class="card__name text">Dabizha Artem</h2>
-                            <p class="age text">23 y.o.</p>
-                            <p class="city text">Saint-Petersburg</p>
-                            <p class="position text">Frontend-developer</p>
-                        </article>
-                    </a>
-                </li>
-                <li class="card__list-item">
-                    <a class="card-link">
-                        <article class="card card-artem team-card">
-                            <h2 class="card__name text">Dabizha Artem</h2>
-                            <p class="age text">23 y.o.</p>
-                            <p class="city text">Saint-Petersburg</p>
-                            <p class="position text">Frontend-developer</p>
-                        </article>
-                    </a>
-                </li>
-                <li class="card__list-item">
-                    <a class="card-link">
-                        <article class="card card-artem team-card">
-                            <h2 class="card__name text">Dabizha Artem</h2>
-                            <p class="age text">23 y.o.</p>
-                            <p class="city text">Saint-Petersburg</p>
-                            <p class="position text">Frontend-developer</p>
-                        </article>
-                    </a>
-                </li>
-                <li class="card__list-item">
-                    <a class="card-link">
-                        <article class="card card-artem team-card">
-                            <h2 class="card__name text">Dabizha Artem</h2>
-                            <p class="age text">23 y.o.</p>
-                            <p class="city text">Saint-Petersburg</p>
-                            <p class="position text">Frontend-developer</p>
-                        </article>
-                    </a>
-                </li>
-            </ul>
-    </main>
-    <footer class="footer">
-        <p class="footer__text">Copyright © 2023 Team 11. All rights reserved.</p>
-    </footer>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/CSS" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header__menu">
+				<a class="header__menu-item" href="index.html">Маркет</a>
+				<a class="header__menu-item" href="about.html">О нас</a>
+			</nav>
+		</header>
+		<main class="main">
+			<h3 class="market__header">Наша команда</h3>
+			<ul class="card__list">
+				<li class="card__list-item">
+					<button class="card-link js-popup-trigger" data-popup-id="popup-team" data-popup-content="team:1">
+						<article class="card pointer-events-none">
+							<h2 class="card__title">Любкин Евгений</h2>
+							<img class="card__photo object-fit-cover" src="./images/team-1.jpg" alt="photo" />
+						</article>
+					</button>
+				</li>
+				<li class="card__list-item">
+					<button class="card-link js-popup-trigger" data-popup-id="popup-team" data-popup-content="team:2">
+						<article class="card pointer-events-none">
+							<h2 class="card__title">Dabizha Artem</h2>
+							<img class="card__photo object-fit-cover" src="./images/team-2.jpg" alt="photo" />
+						</article>
+					</button>
+				</li>
+				<li class="card__list-item">
+					<button class="card-link js-popup-trigger" data-popup-id="popup-team" data-popup-content="team:3">
+						<article class="card pointer-events-none">
+							<h2 class="card__title">Егор Ермилов</h2>
+							<img class="card__photo object-fit-cover" src="./images/team-3.jpg" alt="photo" />
+						</article>
+					</button>
+				</li>
+			</ul>
+			<div class="banner">
+				<p class="banner__text">
+					<span class="banner-accent">
+						Добро пожаловать!
+						<br />
+						<br />
+					</span>
+					Сейчас наш сайт находится в разработке, но вы уже можете посмотреть на его концепт! Мы будем рады
+					услышать от вас предложения по улучшению. Увидимся уже через пару недель!
+					<br />
+					<br />
+					С уважением,
+					<br />
+					Team 11
+				</p>
+			</div>
+		</main>
+		<footer class="footer">
+			<p class="footer__text">Copyright © 2023 Team 11. All rights reserved.</p>
+		</footer>
+		<div>
+			<div id="popup-team" class="popup-team css-animation-popup-slide-up js-popup">
+				<div class="popup-team__overlay popup-overlay js-popup-close"></div>
+				<div class="popup-team__wrapper js-popup-wrapper">
+					<button class="popup-team__button-close js-popup-close">
+						<svg class="pointer-events-none" viewBox="0 0 19 20" xmlns="http://www.w3.org/2000/svg">
+							<line x1="1.03764" y1="1.33065" x2="17.8271" y2="18.1201" />
+							<line x1="17.8272" y1="2.03776" x2="1.03771" y2="18.8272" />
+						</svg>
+					</button>
+					<div class="popup-team__photo">
+						<img
+							class="object-fit-cover js-popup-content-image"
+							src
+							alt="team member photo"
+							loading="lazy" />
+					</div>
+					<div class="popup-team__content">
+						<p class="popup-team__text js-popup-content-name"></p>
+						<p class="popup-team__text js-popup-content-profession"></p>
+						<p class="popup-team__text popup-team__text_red">Позиция в команде:</p>
+						<p class="popup-team__text js-popup-content-post"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./scripts/vendors.min.js"></script>
+		<script src="./scripts/app.js" type="module"></script>
+	</body>
 </html>
