@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/CSS" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="header">
-            <nav class="header__menu">
-                <a class="header__menu-item" href="">Маркет</a>
-                <a class="header__menu-item" href="about.html">О нас</a>
-            </nav>
-    </header>
-    <main class="main">
-        <section class="market__content">
-            <h3 class="market__header"><span class="market__header-accent">Новинки! </span>Успей купить.</h3>
-            <ul class="card__list">
-                <li class="card__list-item">
-                    <a class="card-link">
-                        <article class="card card-orig">
-                            <div class="overlay"></div>
-                            <h2 class="card__title">Миди</h2>
-                        </article>
-                    </a>
-                </li>
-                <li class="card__list-item">
-                    <a class="card-link">
-                        <article class="card card-duo">
-                            <div class="overlay"></div>
-                            <h2 class="card__title">Дуо Макс</h2>
-                        </article>
-                    </a>
-                </li>
-                <li class="card__list-item">
-                    <a class="card-link">
-                        <article class="card card-pro">
-                            <div class="overlay"></div>
-                            <h2 class="card__title">Станция Про</h2>
-                        </article>
-                    </a>
-                </li>
-            </ul>
-            <div class="banner">
-                <p class="banner__text"><span class="banner-accent">Добро пожаловать!<br><br></span>
-                    Сейчас наш сайт находится в разработке, но вы уже можете посмотреть на его концепт! Мы будем рады услышать от вас предложения по улучшению. Увидимся уже через пару недель!<br><br>
-                    С уважением,<br>
-                    Team 11</p>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <p class="footer__text">Copyright © 2023 Team 11. All rights reserved.</p>
-    </footer>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/CSS" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header__menu">
+				<a class="header__menu-item" href="">Маркет</a>
+				<a class="header__menu-item" href="about.html">О нас</a>
+			</nav>
+		</header>
+		<main class="main">
+			<section class="market__content">
+				<h3 class="market__header">
+					<span class="market__header-accent">Новинки!</span>
+					Успей купить.
+				</h3>
+				<ul class="card__list">
+					<li class="card__list-item">
+						<a class="card-link">
+							<article class="card">
+								<h2 class="card__title">Миди</h2>
+								<img class="card__photo object-fit-cover" src="./images/orig.png" alt="photo" />
+							</article>
+						</a>
+					</li>
+					<li class="card__list-item">
+						<a class="card-link">
+							<article class="card">
+								<h2 class="card__title">Дуо Макс</h2>
+								<img class="card__photo object-fit-cover" src="./images/duo.png" alt="photo" />
+							</article>
+						</a>
+					</li>
+					<li class="card__list-item">
+						<a class="card-link">
+							<article class="card">
+								<h2 class="card__title">Станция Про</h2>
+								<img class="card__photo object-fit-cover" src="./images/pro.png" alt="photo" />
+							</article>
+						</a>
+					</li>
+				</ul>
+				<div class="banner">
+					<p class="banner__text">
+						<span class="banner-accent">
+							Добро пожаловать!
+							<br />
+							<br />
+						</span>
+						Сейчас наш сайт находится в разработке, но вы уже можете посмотреть на его концепт! Мы будем
+						рады услышать от вас предложения по улучшению. Увидимся уже через пару недель!
+						<br />
+						<br />
+						С уважением,
+						<br />
+						Team 11
+					</p>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<p class="footer__text">Copyright © 2023 Team 11. All rights reserved.</p>
+		</footer>
+		<script src="./scripts/vendors.min.js"></script>
+		<script src="./scripts/app.js" type="module"></script>
+	</body>
 </html>
