@@ -1,0 +1,139 @@
+{
+	"parser": "@babel/eslint-parser",
+	"root": true,
+	"ignorePatterns": ["temp.js", "**/vendor/*.js"],
+	"extends": [
+		"airbnb",
+		"eslint:recommended",
+		"plugin:prettier/recommended",
+		"plugin:import/recommended",
+		"plugin:perfectionist/recommended-natural"
+	],
+	"plugins": ["perfectionist", "prettier"],
+	"env": {
+		"browser": true,
+		"node": true,
+		"es6": true,
+		"commonjs": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module",
+		"requireConfigFile": false,
+		"ecmaFeatures": {
+			"impliedStrict": true
+		}
+	},
+	"rules": {
+		"no-debugger": "off",
+		"no-console": "off",
+		"class-methods-use-this": "off",
+		"no-unused-vars": "warn",
+		"no-param-reassign": ["error", { "props": false }],
+		"prettier/prettier": "error",
+		"import/no-cycle": "off",
+		"import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+		"import/extensions": ["error", "always", { "ignorePackages": true }],
+		"import/no-unresolved": [
+			"error",
+			{ "ignore": ["\\.png$", "\\.svg$", "\\.jpg$", "\\.jpeg$", "\\.webp$", "\\.avif$", "\\.gif$", "\\.ico$"] }
+		],
+		"perfectionist/sort-array-includes": ["error", { "spread-last": true }],
+		"perfectionist/sort-classes": [
+			"error",
+			{
+				"groups": [
+					"constructor",
+					["get-method", "set-method"],
+					"index-signature",
+					"static-property",
+					"private-property",
+					"property",
+					"static-method",
+					"private-method",
+					"static-private-method",
+					"method",
+					"unknown"
+				]
+			}
+		],
+		"perfectionist/sort-imports": [
+			"error",
+			{
+				"groups": [
+					"type",
+					["builtin", "external"],
+					"internal-type",
+					"internal",
+					["parent-type", "sibling-type", "index-type"],
+					["parent", "sibling", "index"],
+					"object",
+					"unknown"
+				],
+				"internal-pattern": [
+					"@root/**",
+					"@src/**",
+					"@views/**",
+					"@components/**",
+					"@styles/**",
+					"@scripts/**",
+					"@fonts/**",
+					"@images/**",
+					"@icons/**",
+					"@videos/**"
+				],
+				"newlines-between": "always"
+			}
+		],
+		"perfectionist/sort-jsx-props": ["error", { "groups": ["unknown", "shorthand", "multiline"] }],
+		"perfectionist/sort-objects": [
+			"error",
+			{
+				"groups": [
+					"name",
+					"compilerOptions",
+					"components",
+					"directives",
+					"extends",
+					"mixins",
+					"provide",
+					"inject",
+					"inheritAttrs",
+					"props",
+					"emits",
+					"watch",
+					"data",
+					"computed",
+					"methods",
+					"handlers",
+					"listeners",
+					"eventBus",
+					"init",
+					"unknown"
+				],
+				"custom-groups": {
+					"name": "name",
+					"compilerOptions": "compilerOptions",
+					"components": "components",
+					"directives": "directives",
+					"extends": "extends",
+					"mixins": "mixins",
+					"provide": "provide",
+					"inject": "inject",
+					"inheritAttrs": "inheritAttrs",
+					"props": "props",
+					"emits": "emits",
+					"watch": "watch",
+					"data": "data",
+					"computed": "computed",
+					"methods": "methods",
+					"handlers": "handlers",
+					"listeners": "listeners",
+					"eventBus": "eventBus",
+					"init": "init"
+				}
+			}
+		]
+	},
+	"globals": { "scrollLock": true }
+}
