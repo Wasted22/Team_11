@@ -1,5 +1,7 @@
-import { getObjectLength, isElementVisible, reflow } from '../utils.js';
 import TeamData from '../data/team.js';
+import { getObjectLength, isElementVisible, reflow } from '../utils.js';
+
+const scrollLock = window?.scrollLock || { disablePageScroll() {}, enablePageScroll() {} };
 
 class Popup {
 	constructor({ popupElement }) {
@@ -16,10 +18,10 @@ class Popup {
 			partHeader: document.querySelector('.js-part-header'),
 			popup: popupElement,
 			popupContent: {
-				image: popupElement.querySelector('.js-popup-content-image'),
 				name: popupElement.querySelector('.js-popup-content-name'),
-				profession: popupElement.querySelector('.js-popup-content-profession'),
+				image: popupElement.querySelector('.js-popup-content-image'),
 				post: popupElement.querySelector('.js-popup-content-post'),
+				profession: popupElement.querySelector('.js-popup-content-profession'),
 			},
 			popupTriggers: document.querySelectorAll(`.js-popup-trigger[data-popup-id='${this.popupId}']`),
 			popupWrapper: popupElement.querySelector('.js-popup-wrapper') || popupElement,
@@ -135,7 +137,7 @@ class Popup {
 				triggerElement.classList.remove(this.modes.isActive);
 			});
 
-			scrollLock.enablePageScroll();
+			scrollLock?.enablePageScroll();
 		},
 
 		beforeOpen: ({ popupContent }) => {
@@ -146,7 +148,7 @@ class Popup {
 			});
 
 			Popup.hideAllInstances();
-			scrollLock.disablePageScroll();
+			scrollLock?.disablePageScroll();
 		},
 
 		closePopup: () => {
