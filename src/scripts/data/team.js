@@ -20,4 +20,11 @@ export default [
 		post: 'Frontend-developer',
 		profession: 'Frontend-developer<br/>22 года',
 	},
+	{
+		name: 'Степан Сухачев',
+		id: '4',
+		image: './images/team-5.jpg',
+		post: 'Frontend-developer',
+		profession: 'Frontend-developer<br/>22 года',
+	},
 ];
